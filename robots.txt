@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://aceyasystems.com.ng/sitemap.xml
