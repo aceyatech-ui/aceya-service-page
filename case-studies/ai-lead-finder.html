@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI-Powered Lead Outreach — Case Study | Aceya Systems</title>
+  <meta name="description" content="Case study: AI-powered lead outreach workflow that finds leads via Tavily, enriches with Hunter, generates personalised emails with Gemini, and creates Gmail drafts." />
+  <link rel="canonical" href="https://aceya-systems.vercel.app/case-studies/ai-automation.html" />
+
+  <meta property="og:title" content="AI-Powered Lead Outreach — Case Study | Aceya Systems" />
+  <meta property="og:description" content="Fully automated lead outreach with Tavily, Hunter, Gemini, and Gmail." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://aceya-systems.vercel.app/case-studies/ai-automation.html" />
+  <meta property="og:image" content="https://aceya-systems.vercel.app/og-image.png" />
+
+  <meta name="theme-color" content="#0D0F0E" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../style.css" />
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "AI-Powered Lead Outreach",
+    "description": "Fully automated lead outreach with Tavily, Hunter, Gemini, and Gmail.",
+    "author": {
+      "@type": "Person",
+      "name": "Aceya Systems"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="/" class="logo">ACEYA <span class="logo-accent">SYSTEMS</span></a>
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a href="/services.html">Services</a>
+        <a href="/case-studies.html" aria-current="page">Case Studies</a>
+        <a href="/how-we-think.html">How We Think</a>
+        <a href="/insights.html">Insights</a>
+        <a href="/contact.html" class="btn btn-primary" style="padding:0.4rem 1.2rem; font-size:0.85rem;">Start a Project</a>
+        <a href="https://aceyathedeveloper.vercel.app" target="_blank" rel="noopener">About</a>
+      </nav>
+      <div class="nav-actions">
+        <button id="navBurger" class="nav-burger" aria-label="Open navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ BREADCRUMB ============ -->
+    <div style="padding: 8rem 0 0; background: var(--bg);">
+      <div class="container">
+        <p style="font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; color: var(--text-secondary);">
+          <a href="/" style="color: var(--text-secondary); text-decoration: none;">Home</a>
+          <span style="color: var(--text-secondary);"> / </span>
+          <a href="/case-studies.html" style="color: var(--text-secondary); text-decoration: none;">Case Studies</a>
+          <span style="color: var(--text-secondary);"> / </span>
+          <span style="color: var(--accent);">AI-Powered Outreach</span>
+        </p>
+      </div>
+    </div>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" style="min-height: auto; padding: 2rem 0 3rem;">
+      <div class="container">
+        <div class="reveal content-narrow">
+          <span class="section-label" style="margin-bottom: 0.5rem;">Case Study</span>
+          <h1 style="font-size: clamp(2rem, 3.5vw, 3rem);">AI-Powered Lead Outreach</h1>
+          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin: 1rem 0;">
+            <span class="tag">n8n</span>
+            <span class="tag">Gemini</span>
+            <span class="tag">Hunter</span>
+            <span class="tag">Tavily</span>
+            <span class="tag">Gmail</span>
+            <span class="tag">APIs</span>
+          </div>
+          <p style="font-size: 1rem; color: var(--text-secondary); margin-top: 0.5rem;">Project type: Independent build</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTENT ============ -->
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+
+        <!-- Problem -->
+        <div class="case-section reveal">
+          <span class="case-label">01. Problem</span>
+          <h2>Manual lead research and email writing at scale was slow and repetitive.</h2>
+          <p>Finding relevant leads, researching their companies, and writing personalised emails took hours. There was no way to scale the process without hiring a team or sacrificing quality.</p>
+        </div>
+
+        <!-- Objective -->
+        <div class="case-section reveal">
+          <span class="case-label">02. Objective</span>
+          <h2>Build a fully autonomous outreach engine that discovers leads, enriches contact details, generates personalised emails, and creates drafts — all without manual input.</h2>
+          <p>The system should handle the entire pipeline: lead discovery, enrichment, personalisation, draft creation, and logging.</p>
+        </div>
+
+        <!-- Architecture -->
+        <div class="case-section reveal">
+          <span class="case-label">03. Architecture</span>
+          <h2>Four-stage autonomous pipeline</h2>
+          <p style="max-width: 600px;">The workflow runs end-to-end with zero manual intervention.</p>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 1rem;">
+            <div style="background: var(--bg); border: 1px solid var(--border); border-radius: 8px; padding: 1rem;">
+              <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.6rem; color: var(--accent);">STAGE 1: LEAD DISCOVERY</span>
+              <div style="display: flex; flex-direction: column; gap: 0.2rem; font-size: 0.85rem; margin-top: 0.5rem;">
+                <div>→ Schedule/Manual Trigger</div>
+                <div style="padding-left: 1rem;">→ HTTP Request (Tavily)</div>
+                <div style="padding-left: 1rem;">→ Content Extractor</div>
+                <div style="padding-left: 1rem;">→ Parser</div>
+              </div>
+            </div>
+            <div style="background: var(--bg); border: 1px solid var(--border); border-radius: 8px; padding: 1rem;">
+              <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.6rem; color: var(--accent);">STAGE 2: ENRICHMENT</span>
+              <div style="display: flex; flex-direction: column; gap: 0.2rem; font-size: 0.85rem; margin-top: 0.5rem;">
+                <div>→ Lead Saver</div>
+                <div style="padding-left: 1rem;">→ Deduplication</div>
+                <div style="padding-left: 1rem;">→ Hunter</div>
+                <div style="padding-left: 1rem;">→ Best Email Picker</div>
+              </div>
+            </div>
+            <div style="background: var(--bg); border: 1px solid var(--border); border-radius: 8px; padding: 1rem;">
+              <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.6rem; color: var(--accent);">STAGE 3: AI GENERATION</span>
+              <div style="display: flex; flex-direction: column; gap: 0.2rem; font-size: 0.85rem; margin-top: 0.5rem;">
+                <div>→ Description Checker</div>
+                <div style="padding-left: 1rem;">→ AI Agent (Gemini)</div>
+                <div style="padding-left: 1rem;">→ Structured Output Parser</div>
+                <div style="padding-left: 1rem;">→ Merge</div>
+              </div>
+            </div>
+            <div style="background: var(--bg); border: 1px solid var(--border); border-radius: 8px; padding: 1rem;">
+              <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.6rem; color: var(--accent);">STAGE 4: DRAFT & LOG</span>
+              <div style="display: flex; flex-direction: column; gap: 0.2rem; font-size: 0.85rem; margin-top: 0.5rem;">
+                <div>→ Email Parser</div>
+                <div style="padding-left: 1rem;">→ Email Preparer</div>
+                <div style="padding-left: 1rem;">→ Gmail Draft</div>
+                <div style="padding-left: 1rem;">→ Google Sheets (Log)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Screenshots -->
+        <div class="case-section reveal" style="border-bottom: none;">
+          <span class="case-label">04. Workflow</span>
+          <h2>Screenshots</h2>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 1rem;">
+            <div style="background: var(--bg-raised); border: 1px solid var(--border); border-radius: 14px; padding: 1rem; text-align: center;">
+              <div style="font-family: 'JetBrains Mono', monospace; font-size: 0.6rem; color: var(--text-secondary); margin-bottom: 0.5rem;">THE WORKFLOW</div>
+              <img src="/assets/images/ai auto.png" alt="AI-powered n8n workflow" style="width: 100%; border-radius: 8px; border: 1px solid var(--border);" />
+              <p style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 0.5rem;">The full n8n workflow handling discovery, enrichment, AI generation, and draft creation.</p>
+            </div>
+            <div style="background: var(--bg-raised); border: 1px solid var(--border); border-radius: 14px; padding: 1rem; text-align: center;">
+              <div style="font-family: 'JetBrains Mono', monospace; font-size: 0.6rem; color: var(--text-secondary); margin-bottom: 0.5rem;">EMAIL RESULT</div>
+              <img src="/assets/images/ai auto result.png" alt="AI-generated email" style="width: 100%; border-radius: 8px; border: 1px solid var(--border);" />
+              <p style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 0.5rem;">A sample personalised email generated by Gemini.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Implementation -->
+        <div class="case-section reveal">
+          <span class="case-label">05. Implementation</span>
+          <h2>What was built</h2>
+          <ul style="color: var(--text-secondary); font-size: 0.95rem; padding-left: 1.5rem; margin-top: 0.5rem;">
+            <li style="margin-bottom: 0.3rem;">Tavily integration for automated lead discovery</li>
+            <li style="margin-bottom: 0.3rem;">Hunter integration for email enrichment</li>
+            <li style="margin-bottom: 0.3rem;">Gemini AI agent for personalised email generation</li>
+            <li style="margin-bottom: 0.3rem;">Structured output parser for guaranteed JSON response</li>
+            <li style="margin-bottom: 0.3rem;">Deduplication to prevent duplicate outreach</li>
+            <li>Gmail draft creation and Google Sheets logging</li>
+          </ul>
+        </div>
+
+        <!-- Tradeoffs -->
+        <div class="case-section reveal">
+          <span class="case-label">06. Tradeoffs</span>
+          <h2>Key decisions and compromises</h2>
+          <ul style="color: var(--text-secondary); font-size: 0.95rem; padding-left: 1.5rem; margin-top: 0.5rem;">
+            <li style="margin-bottom: 0.3rem;"><strong style="color: var(--text-primary);">AI reliability</strong> — Gemini sometimes failed to produce valid JSON, causing fallback issues</li>
+            <li style="margin-bottom: 0.3rem;"><strong style="color: var(--text-primary);">Speed vs personalisation</strong> — AI generation took 10-20 seconds per lead; faster but less personalised approach was eventually chosen</li>
+            <li style="margin-bottom: 0.3rem;"><strong style="color: var(--text-primary);">Cost</strong> — each AI call costs a small amount, adding up at scale</li>
+            <li><strong style="color: var(--text-primary);">Maintenance</strong> — complex workflows require more debugging and monitoring</li>
+          </ul>
+        </div>
+
+        <!-- Result -->
+        <div class="case-section reveal" style="border-bottom: none;">
+          <span class="case-label">07. Result</span>
+          <h2>A fully autonomous outreach engine that finds, enriches, writes, and drafts.</h2>
+          <p>The system discovers leads, finds emails, generates personalised messages, creates Gmail drafts, and logs everything — all without manual input.</p>
+          <p style="margin-top: 1rem; color: var(--text-secondary); font-size: 0.95rem;">The system was eventually replaced with a simpler, more reliable pre-written approach for volume sending.</p>
+          <p style="color: var(--text-secondary); font-size: 0.9rem; font-style: italic; margin-top: 0.5rem;">A hybrid approach (AI for some leads, pre-written for others) would be the sweet spot.</p>
+        </div>
+
+        <!-- Lessons -->
+        <div class="case-section reveal" style="border-bottom: none;">
+          <span class="case-label">08. What I Learned</span>
+          <ul style="color: var(--text-secondary); font-size: 0.95rem; padding-left: 1.5rem; margin-top: 0.5rem;">
+            <li style="margin-bottom: 0.3rem;">AI is powerful but needs fallbacks for reliability</li>
+            <li style="margin-bottom: 0.3rem;">Structured output parsing helps but doesn't eliminate AI failures</li>
+            <li style="margin-bottom: 0.3rem;">Speed and reliability often matter more than personalisation in volume outreach</li>
+          </ul>
+        </div>
+
+        <!-- CTA -->
+        <div style="margin-top: 3rem; padding: 2rem; background: var(--bg-raised); border: 1px solid var(--border); border-radius: 14px; text-align: center;">
+          <p style="font-size: 1.1rem; color: var(--text-primary);">Need an AI-powered outreach system for your business?</p>
+          <a href="/contact.html" class="btn btn-primary" style="margin-top: 0.5rem;">Start a Project →</a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Aceya Systems. Built by <a href="https://aceyathedeveloper.vercel.app" target="_blank" class="text-accent">Aceya</a>.</p>
+      <div class="footer-links">
+        <a href="/services.html">Services</a>
+        <a href="/case-studies.html">Case Studies</a>
+        <a href="/how-we-think.html">How We Think</a>
+        <a href="/insights.html">Insights</a>
+        <a href="/contact.html">Contact</a>
+        <a href="https://aceyaai.substack.com" target="_blank" rel="noopener">Substack</a>
+        <a href="https://www.linkedin.com/in/chisom-okafor-5859b93a8" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/aceyatech-ui" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.instagram.com/aceyathedeveloper/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

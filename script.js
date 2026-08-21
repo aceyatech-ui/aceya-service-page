@@ -10,6 +10,18 @@ document.addEventListener('DOMContentLoaded', function () {
   const navLinks = document.getElementById('navLinks');
   const revealElements = document.querySelectorAll('.reveal');
 
+  // ---------- Neon Toggle ----------
+const neonToggle = document.getElementById('neonToggle');
+const heroDiagram = document.querySelector('.hero-diagram');
+
+if (neonToggle && heroDiagram) {
+  neonToggle.addEventListener('click', function() {
+    const isOn = heroDiagram.classList.toggle('neon-off');
+    this.classList.toggle('active');
+    this.textContent = isOn ? '✦' : '✦';
+  });
+}
+
   // ---------- NAV ----------
 
   if (burger && navLinks) {
