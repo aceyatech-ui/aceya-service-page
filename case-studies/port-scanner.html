@@ -3,230 +3,911 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Port & Phish Scanner — Case Study | Aceya Systems</title>
-  <meta name="description" content="Case study: Port & Phish Scanner — a security tool that combines URL analysis and port scanning to detect phishing and open ports." />
-  <link rel="canonical" href="https://aceyasystems.com.ng/case-studies/port-scanner.html" />
+
+  <meta
+    name="description"
+    content="Case study: Port & Phish Scanner, a security assessment tool combining phishing detection, DNS analysis, port scanning, and HTTP security checks."
+  />
+
+  <link
+    rel="canonical"
+    href="https://aceyasystems.com.ng/case-studies/port-scanner.html"
+  />
 
   <meta property="og:title" content="Port & Phish Scanner — Case Study | Aceya Systems" />
-  <meta property="og:description" content="Security tool combining URL analysis and port scanning to detect phishing and open ports." />
+  <meta
+    property="og:description"
+    content="A security assessment platform combining phishing detection, DNS analysis, port scanning, and HTTP security checks."
+  />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://aceyasystems.com.ng/case-studies/port-scanner.html" />
-  <meta property="og:image" content="https://aceyasystems.com.ng/og-image.png" />
+  <meta
+    property="og:url"
+    content="https://aceyasystems.com.ng/case-studies/port-scanner.html"
+  />
+  <meta
+    property="og:image"
+    content="https://aceyasystems.com.ng/og-image.png"
+  />
 
   <meta name="theme-color" content="#0D0F0E" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
 
   <link rel="stylesheet" href="../style.css" />
 
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+  <link
+    rel="icon"
+    type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💠</text></svg>"
+  />
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": "Port & Phish Scanner",
-    "description": "Security tool combining URL analysis and port scanning to detect phishing and open ports.",
+    "description": "Security assessment platform combining phishing detection, DNS analysis, port scanning, and HTTP security checks.",
     "author": {
       "@type": "Person",
+      "name": "Aceya Systems"
+    },
+    "publisher": {
+      "@type": "Organization",
       "name": "Aceya Systems"
     }
   }
   </script>
 </head>
+
 <body>
+
+  <!-- ==================== NAVIGATION ==================== -->
 
   <header class="navbar" id="navbar">
     <div class="nav-inner">
-      <a href="/" class="logo">ACEYA <span class="logo-accent">SYSTEMS</span></a>
+
+      <a href="/" class="logo">
+        ACEYA <span class="logo-accent">SYSTEMS</span>
+      </a>
+
       <nav class="nav-links" id="navLinks" aria-label="Main navigation">
-        <a href="/services.html">Services</a>
-        <a href="/case-studies.html" aria-current="page">Case Studies</a>
-        <a href="/how-we-think.html">How We Think</a>
-        <a href="/insights.html">Insights</a>
-        <a href="/contact.html" class="btn btn-primary" style="padding:0.4rem 1.2rem; font-size:0.85rem;">Start a Project</a>
-        <a href="https://aceyathedeveloper.vercel.app" target="_blank" rel="noopener">About</a>
+
+        <a
+          href="https://aceyathedeveloper.vercel.app"
+          target="_blank"
+          rel="noopener"
+        >
+          About
+        </a>
+
+        <a href="/services.html">
+          Services
+        </a>
+
+        <a
+          href="/case-studies.html"
+          aria-current="page"
+        >
+          Case Studies
+        </a>
+
+        <a href="/how-we-think.html">
+          How We Think
+        </a>
+
+        <a href="/insights.html">
+          Insights
+        </a>
+
+        <a
+          href="/contact.html"
+          class="btn btn-primary"
+          style="padding:0.4rem 1.2rem; font-size:0.85rem;"
+        >
+          Start a Project
+        </a>
+
       </nav>
+
       <div class="nav-actions">
-        <button id="navBurger" class="nav-burger" aria-label="Open navigation" aria-expanded="false">
-          <span></span><span></span><span></span>
+        <button
+          id="navBurger"
+          class="nav-burger"
+          aria-label="Open navigation"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
         </button>
       </div>
+
     </div>
   </header>
 
+
   <main>
 
-    <!-- ============ BREADCRUMB ============ -->
+    <!-- ==================== BREADCRUMB ==================== -->
+
     <div style="padding: 8rem 0 0; background: var(--bg);">
+
       <div class="container">
-        <p style="font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; color: var(--text-secondary);">
-          <a href="/" style="color: var(--text-secondary); text-decoration: none;">Home</a>
-          <span style="color: var(--text-secondary);"> / </span>
-          <a href="/case-studies.html" style="color: var(--text-secondary); text-decoration: none;">Case Studies</a>
-          <span style="color: var(--text-secondary);"> / </span>
-          <span style="color: var(--accent);">Port &amp; Phish Scanner</span>
+
+        <p
+          style="
+            font-family:'JetBrains Mono', monospace;
+            font-size:0.7rem;
+            color:var(--text-secondary);
+          "
+        >
+
+          <a
+            href="/"
+            style="color:var(--text-secondary); text-decoration:none;"
+          >
+            Home
+          </a>
+
+          <span> / </span>
+
+          <a
+            href="/case-studies.html"
+            style="color:var(--text-secondary); text-decoration:none;"
+          >
+            Case Studies
+          </a>
+
+          <span> / </span>
+
+          <span style="color:var(--accent);">
+            Port &amp; Phish Scanner
+          </span>
+
         </p>
+
       </div>
+
     </div>
 
-    <!-- ============ HERO ============ -->
-    <section class="hero" style="min-height: auto; padding: 2rem 0 3rem;">
+
+    <!-- ==================== HERO ==================== -->
+
+    <section
+      class="hero"
+      style="min-height:auto; padding:2rem 0 3rem;"
+    >
+
       <div class="container">
+
         <div class="reveal content-narrow">
-          <span class="section-label" style="margin-bottom: 0.5rem;">Case Study</span>
-          <h1 style="font-size: clamp(2rem, 3.5vw, 3rem);">Port &amp; Phish Scanner</h1>
-          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin: 1rem 0;">
+
+          <span
+            class="section-label"
+            style="margin-bottom:0.5rem;"
+          >
+            Case Study
+          </span>
+
+          <h1 style="font-size:clamp(2rem, 3.5vw, 3rem);">
+            Port &amp; Phish Scanner
+          </h1>
+
+          <div
+            style="
+              display:flex;
+              gap:0.5rem;
+              flex-wrap:wrap;
+              margin:1rem 0;
+            "
+          >
+
             <span class="tag">Security</span>
             <span class="tag">Phishing Detection</span>
+            <span class="tag">DNS Analysis</span>
             <span class="tag">Port Scanning</span>
+            <span class="tag">HTTP Security</span>
             <span class="tag">Python</span>
-            <span class="tag">Vercel</span>
+            <span class="tag">APIs</span>
+
           </div>
-          <p style="font-size: 1rem; color: var(--text-secondary); margin-top: 0.5rem;">Project type: Independent build (frontend ready, backend in progress)</p>
+
+          <p
+            style="
+              font-size:1rem;
+              color:var(--text-secondary);
+              margin-top:0.5rem;
+            "
+          >
+            Project type: Independent security product build
+          </p>
+
         </div>
+
       </div>
+
     </section>
 
-    <!-- ============ CONTENT ============ -->
-    <section class="section" style="padding-top: 0;">
+
+    <!-- ==================== CONTENT ==================== -->
+
+    <section
+      class="section"
+      style="padding-top:0;"
+    >
+
       <div class="container">
 
-        <!-- Problem -->
+
+        <!-- PROBLEM -->
+
         <div class="case-section reveal">
-          <span class="case-label">01. Problem</span>
-          <h2>Phishing attacks and open ports are real threats that small businesses can't easily detect.</h2>
-          <p>Detecting phishing URLs and open ports requires either expensive enterprise tools or manual inspection. Small businesses and individuals often lack access to either.</p>
-        </div>
 
-        <!-- Objective -->
-        <div class="case-section reveal">
-          <span class="case-label">02. Objective</span>
-          <h2>Build a tool that combines URL analysis and port scanning in one simple interface.</h2>
-          <p>The tool should allow users to check whether a URL is likely a phishing attempt and scan a domain for open ports — all from a single, easy-to-use interface.</p>
-        </div>
+          <span class="case-label">
+            01. Problem
+          </span>
 
-        <!-- Status Badge -->
-        <div class="case-section reveal" style="border-bottom: none;">
-          <div style="background: var(--accent-dim); padding: 0.75rem 1rem; border-radius: 8px; border: 1px solid var(--accent-subtle);">
-            <p style="color: var(--accent); font-size: 0.9rem; margin: 0;">
-              ⚠️ Backend is currently in progress. This case study documents the frontend design, architecture, and intended functionality.
-            </p>
-          </div>
-        </div>
+          <h2>
+            Website and domain security checks are often scattered across multiple tools.
+          </h2>
 
-        <!-- Architecture -->
-        <div class="case-section reveal">
-          <span class="case-label">03. Architecture</span>
-          <h2>How the system works</h2>
-          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 1rem;">
-            <div style="background: var(--bg); border: 1px solid var(--border); border-radius: 8px; padding: 1rem;">
-              <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.6rem; color: var(--accent);">PHISHING DETECTION</span>
-              <div style="display: flex; flex-direction: column; gap: 0.2rem; font-size: 0.85rem; margin-top: 0.5rem;">
-                <div>→ User submits URL</div>
-                <div style="padding-left: 1rem;">→ URL analysis (domain, SSL, redirects)</div>
-                <div style="padding-left: 1rem;">→ Risk scoring</div>
-                <div style="padding-left: 1rem;">→ Result display</div>
-              </div>
-            </div>
-            <div style="background: var(--bg); border: 1px solid var(--border); border-radius: 8px; padding: 1rem;">
-              <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.6rem; color: var(--accent);">PORT SCANNING</span>
-              <div style="display: flex; flex-direction: column; gap: 0.2rem; font-size: 0.85rem; margin-top: 0.5rem;">
-                <div>→ User submits domain</div>
-                <div style="padding-left: 1rem;">→ Port scan (common ports)</div>
-                <div style="padding-left: 1rem;">→ Open ports identified</div>
-                <div style="padding-left: 1rem;">→ Result display</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Screenshot -->
-        <div class="case-section reveal" style="border-bottom: none;">
-          <span class="case-label">04. Interface</span>
-          <h2>Screenshot</h2>
-          <div style="display: grid; grid-template-columns: 1fr; gap: 1.5rem; margin-top: 1rem;">
-            <div style="background: var(--bg-raised); border: 1px solid var(--border); border-radius: 14px; padding: 1rem; text-align: center;">
-              <div style="font-family: 'JetBrains Mono', monospace; font-size: 0.6rem; color: var(--text-secondary); margin-bottom: 0.5rem;">INTERFACE</div>
-              <img src="/assets/images/portandphishimg.png" alt="Port & Phish Scanner interface" style="width: 100%; border-radius: 8px; border: 1px solid var(--border);" />
-              <p style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 0.5rem;">The Port & Phish Scanner interface (frontend live, backend in progress).</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Implementation -->
-        <div class="case-section reveal">
-          <span class="case-label">05. Implementation</span>
-          <h2>What has been built (and what's next)</h2>
-          <ul style="color: var(--text-secondary); font-size: 0.95rem; padding-left: 1.5rem; margin-top: 0.5rem;">
-            <li style="margin-bottom: 0.3rem;"><strong style="color: var(--text-primary);">Frontend</strong> — Complete interface deployed on Vercel</li>
-            <li style="margin-bottom: 0.3rem;"><strong style="color: var(--text-primary);">Live demo</strong> — Available at <a href="https://port-and-phish-scanner.vercel.app" target="_blank" rel="noopener" style="color: var(--accent);">port-and-phish-scanner.vercel.app</a></li>
-            <li style="margin-bottom: 0.3rem;"><strong style="color: var(--text-primary);">Backend</strong> — In progress (taking time to build it properly)</li>
-            <li><strong style="color: var(--text-primary);">Next</strong> — API integration, actual URL analysis, and port scanning logic</li>
-          </ul>
-        </div>
-
-        <!-- Tradeoffs -->
-        <div class="case-section reveal">
-          <span class="case-label">06. Tradeoffs</span>
-          <h2>Key decisions and compromises</h2>
-          <ul style="color: var(--text-secondary); font-size: 0.95rem; padding-left: 1.5rem; margin-top: 0.5rem;">
-            <li style="margin-bottom: 0.3rem;"><strong style="color: var(--text-primary);">Free vs paid data sources</strong> — using free threat intelligence feeds (slower, less comprehensive)</li>
-            <li style="margin-bottom: 0.3rem;"><strong style="color: var(--text-primary);">Speed vs depth</strong> — scanning all ports vs common ports</li>
-            <li><strong style="color: var(--text-primary);">Simple interface</strong> — deliberately minimal to keep it accessible</li>
-          </ul>
-        </div>
-
-        <!-- Result -->
-        <div class="case-section reveal" style="border-bottom: none;">
-          <span class="case-label">07. Result</span>
-          <h2>A working frontend deployed, with backend in progress.</h2>
-          <p>The frontend is live and functional. The backend is being built properly — no rush, doing it right.</p>
-          <p style="margin-top: 1rem; color: var(--text-secondary); font-size: 0.95rem;">
-            <a href="https://port-and-phish-scanner.vercel.app" target="_blank" rel="noopener" style="color: var(--accent);">View the live demo →</a>
+          <p>
+            Checking a domain for phishing indicators, DNS configuration,
+            exposed ports, and HTTP security headers can require several
+            different tools and technical knowledge.
           </p>
+
+          <p style="margin-top:0.75rem;">
+            The goal was to bring these checks into a single,
+            understandable security assessment interface.
+          </p>
+
         </div>
 
-        <!-- Lessons -->
-        <div class="case-section reveal" style="border-bottom: none;">
-          <span class="case-label">08. What I Learned</span>
-          <ul style="color: var(--text-secondary); font-size: 0.95rem; padding-left: 1.5rem; margin-top: 0.5rem;">
-            <li style="margin-bottom: 0.3rem;">Frontend-first development helps validate the idea before building the backend</li>
-            <li style="margin-bottom: 0.3rem;">Security tools need careful design — mistakes can be dangerous</li>
-            <li style="margin-bottom: 0.3rem;">Taking time to build the backend properly is worth it</li>
-          </ul>
+
+        <!-- OBJECTIVE -->
+
+        <div class="case-section reveal">
+
+          <span class="case-label">
+            02. Objective
+          </span>
+
+          <h2>
+            Build one security assessment platform for domains, URLs, and IP addresses.
+          </h2>
+
+          <p>
+            The platform is designed to accept a target and run several
+            security checks against it, returning the findings in one
+            structured report.
+          </p>
+
         </div>
+
+
+        <!-- ARCHITECTURE -->
+
+        <div class="case-section reveal">
+
+          <span class="case-label">
+            03. Architecture
+          </span>
+
+          <h2>
+            A multi-layer security assessment pipeline
+          </h2>
+
+          <p style="max-width:650px;">
+            The system combines external threat intelligence, DNS
+            lookups, network checks, and HTTP analysis into a single
+            scanning workflow.
+          </p>
+
+
+          <div
+            style="
+              display:grid;
+              grid-template-columns:1fr 1fr;
+              gap:1.5rem;
+              margin-top:1.5rem;
+            "
+          >
+
+            <!-- THREAT INTELLIGENCE -->
+
+            <div
+              style="
+                background:var(--bg);
+                border:1px solid var(--border);
+                border-radius:8px;
+                padding:1rem;
+              "
+            >
+
+              <span
+                style="
+                  font-family:'JetBrains Mono', monospace;
+                  font-size:0.6rem;
+                  color:var(--accent);
+                "
+              >
+                THREAT INTELLIGENCE
+              </span>
+
+              <div
+                style="
+                  display:flex;
+                  flex-direction:column;
+                  gap:0.25rem;
+                  font-size:0.85rem;
+                  margin-top:0.5rem;
+                "
+              >
+
+                <div>→ Target submitted</div>
+
+                <div style="padding-left:1rem;">
+                  → URL/domain analysis
+                </div>
+
+                <div style="padding-left:1rem;">
+                  → VirusTotal lookup
+                </div>
+
+                <div style="padding-left:1rem;">
+                  → Threat indicators
+                </div>
+
+                <div style="padding-left:1rem;">
+                  → Safety assessment
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <!-- DNS -->
+
+            <div
+              style="
+                background:var(--bg);
+                border:1px solid var(--border);
+                border-radius:8px;
+                padding:1rem;
+              "
+            >
+
+              <span
+                style="
+                  font-family:'JetBrains Mono', monospace;
+                  font-size:0.6rem;
+                  color:var(--accent);
+                "
+              >
+                DNS ANALYSIS
+              </span>
+
+              <div
+                style="
+                  display:flex;
+                  flex-direction:column;
+                  gap:0.25rem;
+                  font-size:0.85rem;
+                  margin-top:0.5rem;
+                "
+              >
+
+                <div>→ Domain resolution</div>
+
+                <div style="padding-left:1rem;">
+                  → A / AAAA records
+                </div>
+
+                <div style="padding-left:1rem;">
+                  → MX records
+                </div>
+
+                <div style="padding-left:1rem;">
+                  → NS records
+                </div>
+
+                <div style="padding-left:1rem;">
+                  → TXT records
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <!-- PORT SCANNING -->
+
+            <div
+              style="
+                background:var(--bg);
+                border:1px solid var(--border);
+                border-radius:8px;
+                padding:1rem;
+              "
+            >
+
+              <span
+                style="
+                  font-family:'JetBrains Mono', monospace;
+                  font-size:0.6rem;
+                  color:var(--accent);
+                "
+              >
+                PORT SCANNING
+              </span>
+
+              <div
+                style="
+                  display:flex;
+                  flex-direction:column;
+                  gap:0.25rem;
+                  font-size:0.85rem;
+                  margin-top:0.5rem;
+                "
+              >
+
+                <div>→ Resolve target</div>
+
+                <div style="padding-left:1rem;">
+                  → Check common ports
+                </div>
+
+                <div style="padding-left:1rem;">
+                  → Identify open services
+                </div>
+
+                <div style="padding-left:1rem;">
+                  → Return scan results
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <!-- HTTP -->
+
+            <div
+              style="
+                background:var(--bg);
+                border:1px solid var(--border);
+                border-radius:8px;
+                padding:1rem;
+              "
+            >
+
+              <span
+                style="
+                  font-family:'JetBrains Mono', monospace;
+                  font-size:0.6rem;
+                  color:var(--accent);
+                "
+              >
+                HTTP SECURITY
+              </span>
+
+              <div
+                style="
+                  display:flex;
+                  flex-direction:column;
+                  gap:0.25rem;
+                  font-size:0.85rem;
+                  margin-top:0.5rem;
+                "
+              >
+
+                <div>→ HTTP request</div>
+
+                <div style="padding-left:1rem;">
+                  → Status code
+                </div>
+
+                <div style="padding-left:1rem;">
+                  → Redirect analysis
+                </div>
+
+                <div style="padding-left:1rem;">
+                  → Security headers
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- INTERFACE -->
+
+        <div
+          class="case-section reveal"
+          style="border-bottom:none;"
+        >
+
+          <span class="case-label">
+            04. Interface
+          </span>
+
+          <h2>
+            A single interface for multiple security checks
+          </h2>
+
+          <div
+            style="
+              background:var(--bg-raised);
+              border:1px solid var(--border);
+              border-radius:14px;
+              padding:1rem;
+              margin-top:1rem;
+              text-align:center;
+            "
+          >
+
+            <div
+              style="
+                font-family:'JetBrains Mono', monospace;
+                font-size:0.6rem;
+                color:var(--text-secondary);
+                margin-bottom:0.5rem;
+              "
+            >
+              SECURITY ASSESSMENT INTERFACE
+            </div>
+
+            <img
+              src="/assets/images/portandphishimg.png"
+              alt="Port and Phish Scanner security assessment interface"
+              style="
+                width:100%;
+                border-radius:8px;
+                border:1px solid var(--border);
+              "
+            />
+
+            <p
+              style="
+                font-size:0.8rem;
+                color:var(--text-secondary);
+                margin-top:0.75rem;
+              "
+            >
+              The scanner interface brings target submission,
+              security findings, and technical results into one workflow.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <!-- IMPLEMENTATION -->
+
+        <div class="case-section reveal">
+
+          <span class="case-label">
+            05. Implementation
+          </span>
+
+          <h2>
+            What was built
+          </h2>
+
+          <ul
+            style="
+              color:var(--text-secondary);
+              font-size:0.95rem;
+              padding-left:1.5rem;
+              margin-top:0.5rem;
+            "
+          >
+
+            <li style="margin-bottom:0.3rem;">
+              Target input supporting domains, URLs, and IP addresses
+            </li>
+
+            <li style="margin-bottom:0.3rem;">
+              Phishing and threat-intelligence analysis
+            </li>
+
+            <li style="margin-bottom:0.3rem;">
+              DNS record collection
+            </li>
+
+            <li style="margin-bottom:0.3rem;">
+              Common-port scanning
+            </li>
+
+            <li style="margin-bottom:0.3rem;">
+              HTTP status, redirects, and security-header checks
+            </li>
+
+            <li style="margin-bottom:0.3rem;">
+              Consolidated security findings and scoring
+            </li>
+
+            <li>
+              Report-oriented result presentation
+            </li>
+
+          </ul>
+
+        </div>
+
+
+        <!-- TRADEOFFS -->
+
+        <div class="case-section reveal">
+
+          <span class="case-label">
+            06. Tradeoffs
+          </span>
+
+          <h2>
+            Key engineering decisions
+          </h2>
+
+          <ul
+            style="
+              color:var(--text-secondary);
+              font-size:0.95rem;
+              padding-left:1.5rem;
+              margin-top:0.5rem;
+            "
+          >
+
+            <li style="margin-bottom:0.3rem;">
+
+              <strong style="color:var(--text-primary);">
+                Breadth vs depth
+              </strong>
+
+              — the scanner focuses on useful first-pass checks
+              rather than attempting to replace dedicated enterprise
+              security platforms.
+
+            </li>
+
+            <li style="margin-bottom:0.3rem;">
+
+              <strong style="color:var(--text-primary);">
+                External intelligence vs local analysis
+              </strong>
+
+              — external threat intelligence provides broader coverage,
+              while local checks provide immediate technical context.
+
+            </li>
+
+            <li style="margin-bottom:0.3rem;">
+
+              <strong style="color:var(--text-primary);">
+                Usability vs technical detail
+              </strong>
+
+              — the interface presents security findings in a way that
+              remains understandable without hiding the underlying data.
+
+            </li>
+
+          </ul>
+
+        </div>
+
+
+        <!-- RESULT -->
+
+        <div
+          class="case-section reveal"
+          style="border-bottom:none;"
+        >
+
+          <span class="case-label">
+            07. Result
+          </span>
+
+          <h2>
+            A unified security assessment workflow instead of a collection of disconnected checks.
+          </h2>
+
+          <p>
+            The project brings phishing detection, DNS intelligence,
+            port scanning, and HTTP security analysis into one product
+            experience.
+          </p>
+
+          <p
+            style="
+              margin-top:1rem;
+              color:var(--text-secondary);
+              font-size:0.95rem;
+            "
+          >
+            The architecture is designed so additional security checks
+            and reporting capabilities can be added without rebuilding
+            the entire application.
+          </p>
+
+        </div>
+
+
+        <!-- LESSONS -->
+
+        <div
+          class="case-section reveal"
+          style="border-bottom:none;"
+        >
+
+          <span class="case-label">
+            08. What I Learned
+          </span>
+
+          <ul
+            style="
+              color:var(--text-secondary);
+              font-size:0.95rem;
+              padding-left:1.5rem;
+              margin-top:0.5rem;
+            "
+          >
+
+            <li style="margin-bottom:0.3rem;">
+              Security products need both technical depth and clear
+              result presentation.
+            </li>
+
+            <li style="margin-bottom:0.3rem;">
+              Combining several specialised checks can make a tool
+              considerably more useful than exposing each capability
+              independently.
+            </li>
+
+            <li>
+              Security scanning needs careful backend design,
+              validation, and controlled execution.
+            </li>
+
+          </ul>
+
+        </div>
+
 
         <!-- CTA -->
-        <div style="margin-top: 3rem; padding: 2rem; background: var(--bg-raised); border: 1px solid var(--border); border-radius: 14px; text-align: center;">
-          <p style="font-size: 1.1rem; color: var(--text-primary);">Need a security tool or custom software for your business?</p>
-          <a href="/contact.html" class="btn btn-primary" style="margin-top: 0.5rem;">Start a Project →</a>
+
+        <div
+          style="
+            margin-top:3rem;
+            padding:2rem;
+            background:var(--bg-raised);
+            border:1px solid var(--border);
+            border-radius:14px;
+            text-align:center;
+          "
+        >
+
+          <p
+            style="
+              font-size:1.1rem;
+              color:var(--text-primary);
+            "
+          >
+            Need a security tool or custom software for your business?
+          </p>
+
+          <a
+            href="/contact.html"
+            class="btn btn-primary"
+            style="margin-top:0.5rem;"
+          >
+            Start a Project →
+          </a>
+
         </div>
 
       </div>
+
     </section>
 
   </main>
 
+
+  <!-- ==================== FOOTER ==================== -->
+
   <footer class="footer">
+
     <div class="container footer-inner">
-      <p>&copy; 2026 Aceya Systems. Built by <a href="https://aceyathedeveloper.vercel.app" target="_blank" class="text-accent">Aceya</a>.</p>
+
+      <p>
+        &copy; 2026 Aceya Systems.
+        Built by
+        <a
+          href="https://aceyathedeveloper.vercel.app"
+          target="_blank"
+          rel="noopener"
+          class="text-accent"
+        >
+          Aceya
+        </a>.
+      </p>
+
       <div class="footer-links">
-        <a href="/services.html">Services</a>
-        <a href="/case-studies.html">Case Studies</a>
-        <a href="/how-we-think.html">How We Think</a>
-        <a href="/insights.html">Insights</a>
-        <a href="/contact.html">Contact</a>
-        <a href="https://aceyaai.substack.com" target="_blank" rel="noopener">Substack</a>
-        <a href="https://www.linkedin.com/in/chisom-okafor-5859b93a8" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="https://github.com/aceyatech-ui" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://www.instagram.com/aceyathedeveloper/" target="_blank" rel="noopener">Instagram</a>
+
+        <a href="/services.html">
+          Services
+        </a>
+
+        <a href="/case-studies.html">
+          Case Studies
+        </a>
+
+        <a href="/how-we-think.html">
+          How We Think
+        </a>
+
+        <a href="/insights.html">
+          Insights
+        </a>
+
+        <a href="/contact.html">
+          Contact
+        </a>
+
+        <a
+          href="https://aceyaai.substack.com"
+          target="_blank"
+          rel="noopener"
+        >
+          Substack
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/chisom-okafor-5859b93a8"
+          target="_blank"
+          rel="noopener"
+        >
+          LinkedIn
+        </a>
+
+        <a
+          href="https://github.com/aceyatech-ui"
+          target="_blank"
+          rel="noopener"
+        >
+          GitHub
+        </a>
+
+        <a
+          href="https://www.instagram.com/aceyathedeveloper/"
+          target="_blank"
+          rel="noopener"
+        >
+          Instagram
+        </a>
+
       </div>
+
     </div>
+
   </footer>
 
+
   <script src="../script.js"></script>
+
 </body>
 </html>
