@@ -8,31 +8,49 @@
 
   <meta
     name="description"
-    content="Case study: Python automation tools for reconnaissance, log analysis, file organisation, and text processing."
+    content="Case study: Python Automation Toolkit — a collection of practical Python command-line tools for reconnaissance, log analysis, file organisation, and text processing."
   />
+
+  <meta name="robots" content="index, follow, max-image-preview:large" />
 
   <link
     rel="canonical"
-    href="https://aceyasystems.com.ng/case-studies/python-automation.html"
+    href="https://aceyasystems.com.ng/case-studies/python-automation-toolkit.html"
   />
 
-  <meta property="og:title" content="Python Automation Toolkit — Case Study | Aceya Systems" />
+  <!-- Open Graph -->
+  <meta
+    property="og:title"
+    content="Python Automation Toolkit — Case Study | Aceya Systems"
+  />
+
   <meta
     property="og:description"
-    content="A collection of Python command-line automation tools for security reconnaissance, log analysis, file organisation, and text processing."
+    content="A collection of practical Python command-line tools for reconnaissance, log analysis, file organisation, and text processing."
   />
+
   <meta property="og:type" content="website" />
+
   <meta
     property="og:url"
-    content="https://aceyasystems.com.ng/case-studies/python-automation.html"
+    content="https://aceyasystems.com.ng/case-studies/python-automation-toolkit.html"
   />
+
   <meta
     property="og:image"
     content="https://aceyasystems.com.ng/og-image.png"
   />
 
+  <meta
+    property="og:image:alt"
+    content="Python Automation Toolkit — Aceya Systems"
+  />
+
+  <meta property="og:site_name" content="Aceya Systems" />
+
   <meta name="theme-color" content="#0D0F0E" />
 
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
@@ -43,25 +61,32 @@
 
   <link rel="stylesheet" href="../style.css" />
 
+  <!-- Favicon -->
   <link
     rel="icon"
     type="image/svg+xml"
-    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💠</text></svg>"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>"
   />
 
+  <!-- Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": "Python Automation Toolkit",
-    "description": "A collection of Python command-line automation tools for security reconnaissance, log analysis, file organisation, and text processing.",
+    "description": "A collection of practical Python command-line tools for reconnaissance, log analysis, file organisation, and text processing.",
     "author": {
-      "@type": "Person",
+      "@type": "Organization",
       "name": "Aceya Systems"
     },
     "publisher": {
       "@type": "Organization",
-      "name": "Aceya Systems"
+      "name": "Aceya Systems",
+      "url": "https://aceyasystems.com.ng/"
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://aceyasystems.com.ng/case-studies/python-automation-toolkit.html"
     }
   }
   </script>
@@ -69,16 +94,21 @@
 
 <body>
 
-  <!-- ==================== NAVIGATION ==================== -->
+  <!-- ============ NAVIGATION ============ -->
 
   <header class="navbar" id="navbar">
+
     <div class="nav-inner">
 
       <a href="/" class="logo">
         ACEYA <span class="logo-accent">SYSTEMS</span>
       </a>
 
-      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+      <nav
+        class="nav-links"
+        id="navLinks"
+        aria-label="Main navigation"
+      >
 
         <a
           href="https://aceyathedeveloper.vercel.app"
@@ -124,6 +154,7 @@
           class="nav-burger"
           aria-label="Open navigation"
           aria-expanded="false"
+          aria-controls="navLinks"
         >
           <span></span>
           <span></span>
@@ -133,28 +164,37 @@
       </div>
 
     </div>
+
   </header>
 
 
   <main>
 
-    <!-- ==================== BREADCRUMB ==================== -->
+    <!-- ============ BREADCRUMB ============ -->
 
-    <div style="padding:8rem 0 0; background:var(--bg);">
+    <div
+      style="
+        padding: 8rem 0 0;
+        background: var(--bg);
+      "
+    >
 
       <div class="container">
 
         <p
           style="
-            font-family:'JetBrains Mono', monospace;
-            font-size:0.7rem;
-            color:var(--text-secondary);
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.7rem;
+            color: var(--text-secondary);
           "
         >
 
           <a
             href="/"
-            style="color:var(--text-secondary); text-decoration:none;"
+            style="
+              color: var(--text-secondary);
+              text-decoration: none;
+            "
           >
             Home
           </a>
@@ -163,14 +203,17 @@
 
           <a
             href="/case-studies.html"
-            style="color:var(--text-secondary); text-decoration:none;"
+            style="
+              color: var(--text-secondary);
+              text-decoration: none;
+            "
           >
             Case Studies
           </a>
 
           <span> / </span>
 
-          <span style="color:var(--accent);">
+          <span style="color: var(--accent);">
             Python Automation Toolkit
           </span>
 
@@ -181,11 +224,14 @@
     </div>
 
 
-    <!-- ==================== HERO ==================== -->
+    <!-- ============ HERO ============ -->
 
     <section
       class="hero"
-      style="min-height:auto; padding:2rem 0 3rem;"
+      style="
+        min-height: auto;
+        padding: 2rem 0 4rem;
+      "
     >
 
       <div class="container">
@@ -194,38 +240,56 @@
 
           <span
             class="section-label"
-            style="margin-bottom:0.5rem;"
+            style="margin-bottom: 0.75rem;"
           >
             Case Study
           </span>
 
-          <h1 style="font-size:clamp(2rem, 3.5vw, 3rem);">
+          <h1
+            style="
+              font-size: clamp(2rem, 3.5vw, 3rem);
+              margin-bottom: 1rem;
+            "
+          >
             Python Automation Toolkit
           </h1>
 
           <div
             style="
-              display:flex;
-              gap:0.5rem;
-              flex-wrap:wrap;
-              margin:1rem 0;
+              display: flex;
+              gap: 0.5rem;
+              flex-wrap: wrap;
+              margin: 1rem 0;
             "
           >
 
-            <span class="tag">Python</span>
-            <span class="tag">CLI</span>
-            <span class="tag">Automation</span>
-            <span class="tag">Security</span>
-            <span class="tag">Log Analysis</span>
-            <span class="tag">File Management</span>
+            <span class="tag">
+              Python
+            </span>
+
+            <span class="tag">
+              CLI
+            </span>
+
+            <span class="tag">
+              Automation
+            </span>
+
+            <span class="tag">
+              Security
+            </span>
+
+            <span class="tag">
+              File Management
+            </span>
 
           </div>
 
           <p
             style="
-              font-size:1rem;
-              color:var(--text-secondary);
-              margin-top:0.5rem;
+              font-size: 0.95rem;
+              color: var(--text-secondary);
+              margin-top: 0.75rem;
             "
           >
             Project type: Independent builds
@@ -238,113 +302,187 @@
     </section>
 
 
-    <!-- ==================== CONTENT ==================== -->
+    <!-- ============ CONTENT ============ -->
 
     <section
       class="section"
-      style="padding-top:0;"
+      style="padding-top: 0;"
     >
 
       <div class="container">
 
 
-        <!-- OVERVIEW -->
+        <!-- ============ OVERVIEW ============ -->
 
-        <div class="case-section reveal">
+        <div
+          class="case-section reveal"
+          style="
+            padding-bottom: 4rem;
+            margin-bottom: 1rem;
+          "
+        >
 
           <span class="case-label">
             Overview
           </span>
 
           <h2>
-            Four focused Python tools built around practical problems.
+            Four focused command-line tools for practical automation.
           </h2>
 
-          <p>
-            This collection contains small command-line utilities built
-            to automate repetitive technical tasks, from basic security
-            reconnaissance to log analysis and file organisation.
+          <p
+            style="
+              color: var(--text-secondary);
+              max-width: 720px;
+              line-height: 1.8;
+            "
+          >
+            The Python Automation Toolkit is a collection of small, focused command-line utilities built to automate repetitive technical and everyday tasks. The projects cover security reconnaissance, log analysis, file organisation, and text processing.
           </p>
 
           <p
             style="
-              margin-top:0.75rem;
-              color:var(--text-secondary);
-              font-size:0.95rem;
+              color: var(--text-secondary);
+              max-width: 720px;
+              line-height: 1.8;
+              margin-top: 1rem;
             "
           >
-            Each tool is intentionally focused on one job rather than
-            attempting to become an unnecessarily complicated software
-            suite. Humans do occasionally discover that simpler is better.
+            Each tool is intentionally simple, standalone, and easy to extend rather than being bundled into one unnecessarily complicated application.
           </p>
 
         </div>
 
 
-        <!-- ==================== TOOL 1 ==================== -->
+        <!-- ============ PROJECT STATUS ============ -->
 
         <div
           class="case-section reveal"
           style="
-            border-bottom:1px solid var(--border);
-            padding-bottom:2.5rem;
+            padding-top: 1rem;
+            padding-bottom: 4rem;
+            margin-bottom: 1rem;
+            border-bottom: none;
+          "
+        >
+
+          <div
+            style="
+              background: var(--accent-dim);
+              padding: 1rem 1.25rem;
+              border-radius: 10px;
+              border: 1px solid var(--accent-subtle);
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              gap: 1rem;
+              flex-wrap: wrap;
+            "
+          >
+
+            <div>
+
+              <span
+                style="
+                  display: block;
+                  font-family: 'JetBrains Mono', monospace;
+                  font-size: 0.65rem;
+                  color: var(--accent);
+                  margin-bottom: 0.35rem;
+                  letter-spacing: 0.05em;
+                "
+              >
+                PROJECT STATUS
+              </span>
+
+              <p
+                style="
+                  color: var(--text-secondary);
+                  font-size: 0.9rem;
+                  margin: 0;
+                "
+              >
+                Four standalone Python tools built and available on GitHub.
+              </p>
+
+            </div>
+
+            <a
+              href="https://github.com/aceyatech-ui"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-primary"
+              style="white-space: nowrap;"
+            >
+              View GitHub →
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <!-- ============ 01. BASIC RECON ============ -->
+
+        <div
+          class="case-section reveal"
+          style="
+            padding-top: 2rem;
+            padding-bottom: 4.5rem;
+            margin-bottom: 1rem;
           "
         >
 
           <span class="case-label">
-            01. Security
+            01
           </span>
 
-          <h2 style="margin-bottom:0.25rem;">
+          <h2>
             Basic Recon Tool
           </h2>
 
           <div
             style="
-              display:flex;
-              flex-wrap:wrap;
-              gap:0.3rem;
-              margin-bottom:0.75rem;
+              display: flex;
+              flex-wrap: wrap;
+              gap: 0.35rem;
+              margin: 1rem 0;
             "
           >
 
-            <span class="tag">Security</span>
-            <span class="tag">Recon</span>
-            <span class="tag">Networking</span>
-            <span class="tag">CLI</span>
+            <span class="tag">
+              Security
+            </span>
+
+            <span class="tag">
+              Recon
+            </span>
+
+            <span class="tag">
+              CLI
+            </span>
 
           </div>
 
-          <p>
-            A command-line reconnaissance utility for gathering basic
-            information about a domain or IP address.
+          <p
+            style="
+              color: var(--text-secondary);
+              max-width: 720px;
+              line-height: 1.8;
+            "
+          >
+            A command-line reconnaissance tool that gathers basic information about a domain or IP address, including DNS records, WHOIS information, and common port scanning.
           </p>
 
           <p
             style="
-              color:var(--text-secondary);
-              font-size:0.9rem;
-              margin-top:0.5rem;
+              color: var(--text-secondary);
+              font-size: 0.9rem;
+              margin-top: 1rem;
             "
           >
 
-            <strong style="color:var(--text-primary);">
-              Capabilities:
-            </strong>
-
-            DNS lookups · WHOIS information · common-port checks
-
-          </p>
-
-          <p
-            style="
-              color:var(--text-secondary);
-              font-size:0.9rem;
-              margin-top:0.25rem;
-            "
-          >
-
-            <strong style="color:var(--text-primary);">
+            <strong style="color: var(--text-primary);">
               Built with:
             </strong>
 
@@ -355,65 +493,80 @@
           <a
             href="https://github.com/aceyatech-ui/Basic-Network-Recon-Tool"
             target="_blank"
-            rel="noopener"
-            class="text-accent"
-            style="font-size:0.9rem;"
+            rel="noopener noreferrer"
+            class="btn btn-ghost"
+            style="
+              display: inline-flex;
+              margin-top: 1rem;
+            "
           >
-            View on GitHub →
+            View Tool on GitHub →
           </a>
 
         </div>
 
 
-        <!-- ==================== TOOL 2 ==================== -->
+        <!-- ============ 02. LOG ANALYSIS ============ -->
 
         <div
           class="case-section reveal"
           style="
-            border-bottom:1px solid var(--border);
-            padding-bottom:2.5rem;
+            padding-top: 2rem;
+            padding-bottom: 4.5rem;
+            margin-bottom: 1rem;
           "
         >
 
           <span class="case-label">
-            02. Analysis
+            02
           </span>
 
-          <h2 style="margin-bottom:0.25rem;">
+          <h2>
             Log Analysis Tool
           </h2>
 
           <div
             style="
-              display:flex;
-              flex-wrap:wrap;
-              gap:0.3rem;
-              margin-bottom:0.75rem;
+              display: flex;
+              flex-wrap: wrap;
+              gap: 0.35rem;
+              margin: 1rem 0;
             "
           >
 
-            <span class="tag">Logs</span>
-            <span class="tag">Analysis</span>
-            <span class="tag">Regex</span>
-            <span class="tag">CLI</span>
+            <span class="tag">
+              Logs
+            </span>
+
+            <span class="tag">
+              Analysis
+            </span>
+
+            <span class="tag">
+              CLI
+            </span>
 
           </div>
 
-          <p>
-            A Python utility that parses log files, identifies useful
-            patterns, highlights errors and warnings, and produces
-            summary statistics.
+          <p
+            style="
+              color: var(--text-secondary);
+              max-width: 720px;
+              line-height: 1.8;
+            "
+          >
+            A command-line tool that parses log files, identifies useful patterns, highlights errors and warnings, and generates summary statistics for troubleshooting and system monitoring.
           </p>
 
           <p
             style="
-              color:var(--text-secondary);
-              font-size:0.9rem;
-              margin-top:0.5rem;
+              color: var(--text-secondary);
+              font-size: 0.9rem;
+              margin-top: 1rem;
             "
           >
 
-            <strong style="color:var(--text-primary);">
+            <strong style="color: var(--text-primary);">
               Built with:
             </strong>
 
@@ -424,81 +577,80 @@
           <a
             href="https://github.com/aceyatech-ui/Log-analyzer"
             target="_blank"
-            rel="noopener"
-            class="text-accent"
-            style="font-size:0.9rem;"
+            rel="noopener noreferrer"
+            class="btn btn-ghost"
+            style="
+              display: inline-flex;
+              margin-top: 1rem;
+            "
           >
-            View on GitHub →
+            View Tool on GitHub →
           </a>
 
         </div>
 
 
-        <!-- ==================== TOOL 3 ==================== -->
+        <!-- ============ 03. FILE SORTER ============ -->
 
         <div
           class="case-section reveal"
           style="
-            border-bottom:1px solid var(--border);
-            padding-bottom:2.5rem;
+            padding-top: 2rem;
+            padding-bottom: 4.5rem;
+            margin-bottom: 1rem;
           "
         >
 
           <span class="case-label">
-            03. Automation
+            03
           </span>
 
-          <h2 style="margin-bottom:0.25rem;">
+          <h2>
             File Sorter
           </h2>
 
           <div
             style="
-              display:flex;
-              flex-wrap:wrap;
-              gap:0.3rem;
-              margin-bottom:0.75rem;
+              display: flex;
+              flex-wrap: wrap;
+              gap: 0.35rem;
+              margin: 1rem 0;
             "
           >
 
-            <span class="tag">File Management</span>
-            <span class="tag">Automation</span>
-            <span class="tag">CLI</span>
+            <span class="tag">
+              File Management
+            </span>
+
+            <span class="tag">
+              Automation
+            </span>
+
+            <span class="tag">
+              CLI
+            </span>
 
           </div>
 
-          <p>
-            A file organisation utility that scans directories and
-            automatically sorts files according to their type and
-            configured rules.
+          <p
+            style="
+              color: var(--text-secondary);
+              max-width: 720px;
+              line-height: 1.8;
+            "
+          >
+            An automation script that organises files according to type, date, or custom rules. It scans a directory, groups files by extension, and moves them into appropriate folders.
           </p>
 
           <p
             style="
-              color:var(--text-secondary);
-              font-size:0.9rem;
-              margin-top:0.5rem;
+              color: var(--text-secondary);
+              font-size: 0.9rem;
+              margin-top: 1rem;
             "
           >
 
-            <strong style="color:var(--text-primary);">
-              Capabilities:
-            </strong>
-
-            Directory scanning · extension-based sorting ·
-            folder organisation · optional renaming
-
-          </p>
-
-          <p
-            style="
-              color:var(--text-secondary);
-              font-size:0.9rem;
-              margin-top:0.25rem;
-            "
-          >
-
-            <strong style="color:var(--text-primary);">
+            <strong style="color: var(--text-primary);">
               Built with:
             </strong>
 
@@ -509,79 +661,77 @@
           <a
             href="https://github.com/aceyatech-ui/my-file-sorter-script"
             target="_blank"
-            rel="noopener"
-            class="text-accent"
-            style="font-size:0.9rem;"
+            rel="noopener noreferrer"
+            class="btn btn-ghost"
+            style="
+              display: inline-flex;
+              margin-top: 1rem;
+            "
           >
-            View on GitHub →
+            View Tool on GitHub →
           </a>
 
         </div>
 
 
-        <!-- ==================== TOOL 4 ==================== -->
+        <!-- ============ 04. WORD COUNTER ============ -->
 
         <div
           class="case-section reveal"
           style="
-            border-bottom:none;
-            padding-bottom:2.5rem;
+            padding-top: 2rem;
+            padding-bottom: 4.5rem;
+            margin-bottom: 1rem;
+            border-bottom: none;
           "
         >
 
           <span class="case-label">
-            04. Text Processing
+            04
           </span>
 
-          <h2 style="margin-bottom:0.25rem;">
+          <h2>
             Word Counter
           </h2>
 
           <div
             style="
-              display:flex;
-              flex-wrap:wrap;
-              gap:0.3rem;
-              margin-bottom:0.75rem;
+              display: flex;
+              flex-wrap: wrap;
+              gap: 0.35rem;
+              margin: 1rem 0;
             "
           >
 
-            <span class="tag">Text Processing</span>
-            <span class="tag">CLI</span>
+            <span class="tag">
+              Text Processing
+            </span>
+
+            <span class="tag">
+              CLI
+            </span>
 
           </div>
 
-          <p>
-            A lightweight command-line tool that counts words, lines,
-            and characters in text files.
+          <p
+            style="
+              color: var(--text-secondary);
+              max-width: 720px;
+              line-height: 1.8;
+            "
+          >
+            A lightweight command-line utility that counts words, lines, and characters in text files. It supports single or multiple files and produces a clean summary of the results.
           </p>
 
           <p
             style="
-              color:var(--text-secondary);
-              font-size:0.9rem;
-              margin-top:0.5rem;
+              color: var(--text-secondary);
+              font-size: 0.9rem;
+              margin-top: 1rem;
             "
           >
 
-            <strong style="color:var(--text-primary);">
-              Capabilities:
-            </strong>
-
-            Single-file processing · multiple-file processing ·
-            summary output
-
-          </p>
-
-          <p
-            style="
-              color:var(--text-secondary);
-              font-size:0.9rem;
-              margin-top:0.25rem;
-            "
-          >
-
-            <strong style="color:var(--text-primary);">
+            <strong style="color: var(--text-primary);">
               Built with:
             </strong>
 
@@ -592,199 +742,78 @@
           <a
             href="https://github.com/aceyatech-ui/word-count-tool"
             target="_blank"
-            rel="noopener"
-            class="text-accent"
-            style="font-size:0.9rem;"
+            rel="noopener noreferrer"
+            class="btn btn-ghost"
+            style="
+              display: inline-flex;
+              margin-top: 1rem;
+            "
           >
-            View on GitHub →
+            View Tool on GitHub →
           </a>
 
         </div>
 
 
-        <!-- ==================== ENGINEERING APPROACH ==================== -->
+        <!-- ============ 05. TRADEOFFS ============ -->
 
-        <div class="case-section reveal">
+        <div
+          class="case-section reveal"
+          style="
+            padding-top: 3rem;
+            padding-bottom: 4.5rem;
+            margin-bottom: 1rem;
+          "
+        >
 
           <span class="case-label">
-            05. Engineering Approach
+            05. Tradeoffs
           </span>
 
           <h2>
-            Small tools, clear responsibilities.
+            Key decisions across the toolkit
           </h2>
 
-          <p>
-            The toolkit follows a deliberately simple approach:
-            each utility solves a narrow problem, keeps dependencies
-            relatively small, and exposes its functionality through
-            the command line.
-          </p>
-
-          <div
+          <p
             style="
-              display:grid;
-              grid-template-columns:repeat(3, 1fr);
-              gap:1rem;
-              margin-top:1.25rem;
+              color: var(--text-secondary);
+              max-width: 720px;
+              line-height: 1.8;
+              margin-bottom: 1.5rem;
             "
           >
-
-            <div
-              style="
-                background:var(--bg);
-                border:1px solid var(--border);
-                border-radius:8px;
-                padding:1rem;
-              "
-            >
-
-              <span
-                style="
-                  font-family:'JetBrains Mono', monospace;
-                  font-size:0.6rem;
-                  color:var(--accent);
-                "
-              >
-                FOCUS
-              </span>
-
-              <p
-                style="
-                  font-size:0.85rem;
-                  margin-top:0.5rem;
-                  color:var(--text-secondary);
-                "
-              >
-                Each utility handles a specific task instead of
-                becoming a bloated all-in-one application.
-              </p>
-
-            </div>
-
-
-            <div
-              style="
-                background:var(--bg);
-                border:1px solid var(--border);
-                border-radius:8px;
-                padding:1rem;
-              "
-            >
-
-              <span
-                style="
-                  font-family:'JetBrains Mono', monospace;
-                  font-size:0.6rem;
-                  color:var(--accent);
-                "
-              >
-                SCRIPTABILITY
-              </span>
-
-              <p
-                style="
-                  font-size:0.85rem;
-                  margin-top:0.5rem;
-                  color:var(--text-secondary);
-                "
-              >
-                CLI interfaces make the tools easier to run manually,
-                automate, or integrate into larger workflows.
-              </p>
-
-            </div>
-
-
-            <div
-              style="
-                background:var(--bg);
-                border:1px solid var(--border);
-                border-radius:8px;
-                padding:1rem;
-              "
-            >
-
-              <span
-                style="
-                  font-family:'JetBrains Mono', monospace;
-                  font-size:0.6rem;
-                  color:var(--accent);
-                "
-              >
-                EXTENSIBILITY
-              </span>
-
-              <p
-                style="
-                  font-size:0.85rem;
-                  margin-top:0.5rem;
-                  color:var(--text-secondary);
-                "
-              >
-                The tools can be extended as requirements become more
-                sophisticated.
-              </p>
-
-            </div>
-
-          </div>
-
-        </div>
-
-
-        <!-- ==================== TRADEOFFS ==================== -->
-
-        <div class="case-section reveal">
-
-          <span class="case-label">
-            06. Tradeoffs
-          </span>
-
-          <h2>
-            Simplicity was a deliberate engineering choice.
-          </h2>
+            The tools were deliberately designed around simplicity and practical usefulness rather than adding complexity for its own sake.
+          </p>
 
           <ul
             style="
-              color:var(--text-secondary);
-              font-size:0.95rem;
-              padding-left:1.5rem;
-              margin-top:0.5rem;
+              color: var(--text-secondary);
+              font-size: 0.95rem;
+              padding-left: 1.5rem;
+              margin-top: 0;
+              line-height: 1.8;
             "
           >
 
-            <li style="margin-bottom:0.4rem;">
-
-              <strong style="color:var(--text-primary);">
+            <li style="margin-bottom: 0.7rem;">
+              <strong style="color: var(--text-primary);">
                 CLI over GUI
               </strong>
-
-              — command-line tools are easier to script,
-              automate, and integrate.
-
+              — command-line tools are fast, scriptable, lightweight, and easy to integrate into other workflows.
             </li>
 
-            <li style="margin-bottom:0.4rem;">
-
-              <strong style="color:var(--text-primary);">
-                Small scope
+            <li style="margin-bottom: 0.7rem;">
+              <strong style="color: var(--text-primary);">
+                Simplicity
               </strong>
-
-              — each project intentionally focuses on a limited
-              problem rather than introducing unnecessary complexity.
-
+              — each tool focuses on a specific task instead of becoming an unnecessarily large software suite.
             </li>
 
             <li>
-
-              <strong style="color:var(--text-primary);">
-                Minimal dependencies
+              <strong style="color: var(--text-primary);">
+                Standalone
               </strong>
-
-              — keeping the tools lightweight makes them easier
-              to understand, maintain, and run.
-
+              — minimal dependencies make the tools easier to understand, modify, and run in different environments.
             </li>
 
           </ul>
@@ -792,99 +821,68 @@
         </div>
 
 
-        <!-- ==================== RESULT ==================== -->
+        <!-- ============ 06. RESULT ============ -->
 
         <div
           class="case-section reveal"
-          style="border-bottom:none;"
+          style="
+            padding-top: 3rem;
+            padding-bottom: 4.5rem;
+            margin-bottom: 1rem;
+            border-bottom: none;
+          "
         >
 
           <span class="case-label">
-            07. Result
+            06. Result
           </span>
 
           <h2>
-            A practical collection of Python utilities for repetitive technical tasks.
+            A practical collection of Python utilities for everyday automation.
           </h2>
 
-          <p>
-            Together, the projects demonstrate the ability to turn
-            repetitive technical processes into small, reusable
-            command-line tools.
+          <p
+            style="
+              color: var(--text-secondary);
+              max-width: 720px;
+              line-height: 1.8;
+            "
+          >
+            The toolkit demonstrates how small, focused scripts can remove repetitive work and provide useful technical capabilities without requiring a large application or complicated infrastructure.
           </p>
 
           <p
             style="
-              margin-top:1rem;
-              color:var(--text-secondary);
-              font-size:0.95rem;
+              color: var(--text-secondary);
+              max-width: 720px;
+              line-height: 1.8;
+              margin-top: 1rem;
             "
           >
-            The toolkit also serves as a foundation for building more
-            sophisticated Python automation systems and security
-            utilities.
+            Together, the projects also demonstrate practical experience with Python, command-line interfaces, file operations, text processing, regular expressions, and basic security tooling.
           </p>
 
         </div>
 
 
-        <!-- ==================== LESSONS ==================== -->
-
-        <div
-          class="case-section reveal"
-          style="border-bottom:none;"
-        >
-
-          <span class="case-label">
-            08. What I Learned
-          </span>
-
-          <ul
-            style="
-              color:var(--text-secondary);
-              font-size:0.95rem;
-              padding-left:1.5rem;
-              margin-top:0.5rem;
-            "
-          >
-
-            <li style="margin-bottom:0.4rem;">
-              Small automation scripts can remove surprisingly large
-              amounts of repetitive manual work.
-            </li>
-
-            <li style="margin-bottom:0.4rem;">
-              CLI tools are particularly useful when a process needs
-              to be repeated or integrated into another workflow.
-            </li>
-
-            <li>
-              Keeping individual tools focused makes them easier to
-              debug, extend, and reuse.
-            </li>
-
-          </ul>
-
-        </div>
-
-
-        <!-- ==================== CTA ==================== -->
+        <!-- ============ CTA ============ -->
 
         <div
           style="
-            margin-top:3rem;
-            padding:2rem;
-            background:var(--bg-raised);
-            border:1px solid var(--border);
-            border-radius:14px;
-            text-align:center;
+            margin-top: 2rem;
+            padding: 2.5rem 2rem;
+            background: var(--bg-raised);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            text-align: center;
           "
         >
 
           <p
             style="
-              font-size:1.1rem;
-              color:var(--text-primary);
+              font-size: 1.1rem;
+              color: var(--text-primary);
+              margin-bottom: 0;
             "
           >
             Need a custom Python automation tool?
@@ -893,7 +891,7 @@
           <a
             href="/contact.html"
             class="btn btn-primary"
-            style="margin-top:0.5rem;"
+            style="margin-top: 1rem;"
           >
             Start a Project →
           </a>
@@ -907,23 +905,27 @@
   </main>
 
 
-  <!-- ==================== FOOTER ==================== -->
+  <!-- ============ FOOTER ============ -->
 
   <footer class="footer">
 
     <div class="container footer-inner">
 
       <p>
+
         &copy; 2026 Aceya Systems.
+
         Built by
+
         <a
           href="https://aceyathedeveloper.vercel.app"
           target="_blank"
-          rel="noopener"
+          rel="noopener noreferrer"
           class="text-accent"
         >
           Aceya
         </a>.
+
       </p>
 
       <div class="footer-links">
@@ -951,7 +953,7 @@
         <a
           href="https://aceyaai.substack.com"
           target="_blank"
-          rel="noopener"
+          rel="noopener noreferrer"
         >
           Substack
         </a>
@@ -959,7 +961,7 @@
         <a
           href="https://www.linkedin.com/in/chisom-okafor-5859b93a8"
           target="_blank"
-          rel="noopener"
+          rel="noopener noreferrer"
         >
           LinkedIn
         </a>
@@ -967,7 +969,7 @@
         <a
           href="https://github.com/aceyatech-ui"
           target="_blank"
-          rel="noopener"
+          rel="noopener noreferrer"
         >
           GitHub
         </a>
@@ -975,7 +977,7 @@
         <a
           href="https://www.instagram.com/aceyathedeveloper/"
           target="_blank"
-          rel="noopener"
+          rel="noopener noreferrer"
         >
           Instagram
         </a>
