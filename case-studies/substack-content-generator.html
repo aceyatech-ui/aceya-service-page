@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Automated Substack Content Generator — Case Study | Aceya Systems</title>
+  <meta name="description" content="Case study: An n8n workflow that turns a random topic into a structured Substack draft and delivers it to Telegram for review." />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <link rel="canonical" href="https://www.aceyasystems.com.ng/case-studies/substack-content-generator.html" />
+  <meta property="og:title" content="Automated Substack Content Generator — Case Study | Aceya Systems" />
+  <meta property="og:description" content="An n8n workflow that turns a random topic into a structured Substack draft and delivers it to Telegram for review." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://aceyasystems.com.ng/case-studies/substack-content-generator.html" />
+  <meta property="og:image" content="https://aceyasystems.com.ng/assets/images/substack_gen_workflow.png" />
+  <meta property="og:site_name" content="Aceya Systems" />
+  <meta name="theme-color" content="#0D0F0E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="icon" type="image/svg+xml" href="../assets/logos/lemon-spade.svg.svg" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Automated Substack Content Generator",
+    "description": "An n8n workflow that turns a random topic into a structured Substack draft and delivers it to Telegram for review.",
+    "author": { "@type": "Organization", "name": "Aceya Systems" },
+    "publisher": { "@type": "Organization", "name": "Aceya Systems", "url": "https://aceyasystems.com.ng/" },
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://aceyasystems.com.ng/case-studies/substack-content-generator.html" }
+  }
+  </script>
+</head>
+<body>
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="/" class="logo">ACEYA <span class="logo-accent">SYSTEMS</span></a>
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a href="https://aceyathedeveloper.vercel.app" target="_blank" rel="noopener">About</a>
+        <a href="/services.html">Services</a>
+        <a href="/case-studies.html" aria-current="page">Case Studies</a>
+        <a href="/how-we-think.html">How We Think</a>
+        <a href="/insights.html">Insights</a>
+        <a href="/contact.html" class="btn btn-primary" style="padding:0.4rem 1.2rem; font-size:0.85rem;">Start a Project</a>
+      </nav>
+      <div class="nav-actions">
+        <button id="navBurger" class="nav-burger" aria-label="Open navigation" aria-expanded="false" aria-controls="navLinks" type="button"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div style="padding:8rem 0 0; background:var(--bg);">
+      <div class="container">
+        <p style="font-family:'JetBrains Mono',monospace; font-size:0.7rem; color:var(--text-secondary);">
+          <a href="/" style="color:var(--text-secondary); text-decoration:none;">Home</a><span> / </span>
+          <a href="/case-studies.html" style="color:var(--text-secondary); text-decoration:none;">Case Studies</a><span> / </span>
+          <span style="color:var(--accent);">Substack Content Generator</span>
+        </p>
+      </div>
+    </div>
+
+    <section class="hero" style="min-height:auto; padding:2rem 0 4.5rem;">
+      <div class="container">
+        <div class="reveal content-narrow">
+          <span class="section-label" style="margin-bottom:0.6rem;">Case Study</span>
+          <h1 style="font-size:clamp(2rem,3.5vw,3rem); margin-bottom:1rem;">Automated Substack Content Generator</h1>
+          <div style="display:flex; gap:0.5rem; flex-wrap:wrap; margin:1rem 0 1.25rem;">
+            <span class="tag">AI Automation</span><span class="tag">n8n</span><span class="tag">Gemini</span><span class="tag">Telegram</span><span class="tag">Structured Output</span>
+          </div>
+          <p style="font-size:1rem; color:var(--text-secondary); margin:0;">Built for Chisom Okafor · Aceya Systems</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0;">
+      <div class="container">
+        <div class="case-section reveal" style="padding-bottom:4rem;">
+          <span class="case-label">01. Problem</span>
+          <h2>Every Substack issue started from a blank page.</h2>
+          <p>Writing each issue manually meant choosing a topic, drafting a header and subtitle, writing the body, and getting the draft somewhere it could be reviewed. There was no repeatable system behind the process, so the same setup work had to happen every time.</p>
+        </div>
+
+        <div class="case-section reveal" style="padding:4rem 0;">
+          <span class="case-label">02. Objective</span>
+          <h2>Turn a topic idea into a structured, ready-to-edit draft.</h2>
+          <p>The goal was to remove the manual drafting step while keeping the output useful and reviewable. The workflow should choose from a defined set of topics, apply writing constraints, generate consistent fields, and deliver the result directly to Telegram.</p>
+        </div>
+
+        <div class="case-section reveal" style="padding:4rem 0;">
+          <span class="case-label">03. Architecture</span>
+          <h2>Topic selection → AI generation → structured parsing → Telegram.</h2>
+          <p style="max-width:700px; color:var(--text-secondary);">The n8n pipeline keeps the creative generation step constrained and the final handoff practical.</p>
+          <div class="case-flow-list" style="display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:1.5rem; margin-top:2rem;">
+            <div class="case-flow-card"><span>01 / START</span><h3>Kick off the run</h3><p>A trigger node starts the workflow.</p></div>
+            <div class="case-flow-card"><span>02 / TOPICS</span><h3>Pick a direction</h3><p>A Code node stores 10 preset topics, then an Edit Fields/Set node selects one at random and attaches the writing constraints.</p></div>
+            <div class="case-flow-card"><span>03 / GENERATE</span><h3>Generate the draft</h3><p>An AI Agent sends the topic and constraints to Google Gemini, with a Structured Output Parser enforcing header, subtitle, and body fields.</p></div>
+            <div class="case-flow-card"><span>04 / DELIVER</span><h3>Send it to review</h3><p>A secondary JSON/code parser cleans the response before a Telegram node sends the finished draft to Chisom's chat.</p></div>
+          </div>
+        </div>
+
+        <div class="case-section reveal substack-evidence" style="padding:4rem 0; border-bottom:1px solid var(--border);">
+          <span class="case-label">04. Workflow In Action</span>
+          <h2>From random topic to a draft in Telegram.</h2>
+          <p style="max-width:700px; color:var(--text-secondary);">The screenshots show both sides of the system: the n8n workflow that generates the draft and the Telegram delivery that makes the result easy to see and act on.</p>
+          <div class="case-evidence-grid">
+            <figure class="case-evidence-card">
+              <div class="case-evidence-label">THE WORKFLOW</div>
+              <img class="case-study-media" src="../assets/images/substack_gen_workflow.png" alt="n8n workflow for generating structured Substack content" />
+              <figcaption>The n8n workflow coordinating topic selection, Gemini generation, structured parsing, and Telegram delivery.</figcaption>
+            </figure>
+            <figure class="case-evidence-card">
+              <div class="case-evidence-label">TELEGRAM PROOF</div>
+              <img class="case-study-media" src="../assets/images/substack_gen_proof.png" alt="Telegram message containing a generated Substack draft" />
+              <figcaption>The generated header, subtitle, and body arriving as a structured draft in Telegram.</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="case-section reveal" style="padding:4rem 0;">
+          <span class="case-label">05. Outcome</span>
+          <h2>The manual drafting step is gone.</h2>
+          <p>The pipeline is live and a structured draft now arrives automatically instead of being written from scratch for every issue. Time saved per issue has not been logged with hard numbers yet, so the next measurement is to time a handful of issues before and after the workflow.</p>
+          <div style="margin-top:1.5rem; padding:1rem 1.25rem; background:var(--accent-dim); border:1px solid var(--accent-subtle); border-radius:10px;"><span class="case-label" style="margin-bottom:0.35rem;">NEXT MEASUREMENT</span><p style="font-size:0.9rem; margin:0;">Compare the time required to produce several issues manually with the time required to review and edit generated drafts.</p></div>
+        </div>
+
+        <div class="case-section reveal" style="padding:1rem 0 4rem; border-bottom:0;"><a href="/case-studies.html" class="btn btn-ghost">← Back to Case Studies</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container footer-inner"><p>© 2026 Aceya Systems. Built for useful systems.</p><div class="footer-links"><a href="/services.html">Services</a><a href="/case-studies.html">Case Studies</a><a href="/contact.html">Contact</a></div></div></footer>
+  <script src="../script.js"></script>
+</body>
+</html>

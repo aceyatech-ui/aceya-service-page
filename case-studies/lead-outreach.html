@@ -298,7 +298,7 @@
         </div>
 
 
-        <!-- 02 OBJECTIVE -->
+        <!-- 02 WHAT I DID -->
 
         <div
           class="case-section reveal"
@@ -306,18 +306,19 @@
         >
 
           <span class="case-label">
-            02. Objective
+            02. What I Did
           </span>
 
           <h2>
-            Build an automated outreach system that sends personalised emails
-            and alerts instantly when someone replies.
+            Built two connected n8n workflows sharing one Google Sheet as the source of truth.
           </h2>
 
           <p>
-            The system was designed to handle personalisation, controlled
-            sending, status tracking, and reply monitoring while keeping the
-            lead data inside a single Google Sheet.
+            The sending workflow pulls rows, skips already-sent leads, formats
+            a personalised message, sends via Gmail with a 60-second delay,
+            and updates status. A separate reply-monitor workflow checks every
+            five minutes, searches Gmail for replies, and sends a Telegram
+            alert when one comes in.
           </p>
 
         </div>
@@ -724,17 +725,17 @@
         >
 
           <span class="case-label">
-            07. Result
+            03. What Came of It
           </span>
 
           <h2>
-            A working system for the full outreach pipeline.
+            A working end-to-end outreach system from structured lead data to Telegram reply notifications.
           </h2>
 
           <p>
-            The workflow can send personalised outreach from structured
-            lead data, record which leads have been contacted, and monitor
-            the inbox for replies.
+            Personalised sends use structured lead data, automatic tracking
+            prevents duplicates, and reply notifications arrive in Telegram
+            instead of requiring a manually watched inbox.
           </p>
 
           <p

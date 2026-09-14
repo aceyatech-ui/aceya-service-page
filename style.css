@@ -642,6 +642,61 @@ summary:focus-visible {
   font-weight: 500;
 }
 
+/* ---------- Case Study Evidence ---------- */
+.case-flow-card,
+.case-evidence-card {
+  min-width: 0;
+  background: var(--bg-raised);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1rem;
+}
+
+.case-flow-card {
+  padding: 1.5rem;
+}
+
+.case-flow-card > span,
+.case-evidence-label {
+  display: block;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.05em;
+  color: var(--accent);
+}
+
+.case-flow-card h3 {
+  margin-top: 0.75rem;
+}
+
+.case-flow-card p,
+.case-evidence-card figcaption {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.case-evidence-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.case-study-media {
+  width: 100%;
+  height: auto;
+  max-width: none;
+  margin-top: 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  object-fit: contain;
+}
+
+.case-evidence-card figcaption {
+  line-height: 1.55;
+}
+
 /* ---------- Service Detail ---------- */
 .service-detail {
   padding: 3rem 0;
@@ -950,6 +1005,18 @@ summary:focus-visible {
 
 /* ---------- Image Zoom on Mobile (tap/click) ---------- */
 @media (max-width: 768px) {
+  .case-evidence-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .case-evidence-card {
+    padding: 0.75rem;
+  }
+
+  .case-study-media {
+    width: 100%;
+  }
+
   .case-study-card img,
   .service-detail img,
   .hero-diagram img,
