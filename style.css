@@ -446,12 +446,13 @@ summary:focus-visible {
 /* ---------- Services ---------- */
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(min(100%, 280px), 1fr)
-  );
-  gap: 1.5rem;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
   margin-top: 2rem;
+}
+
+.services-grid .service-card {
+  padding: 1.25rem;
 }
 
 .service-card {
