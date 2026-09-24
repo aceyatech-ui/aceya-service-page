@@ -56,14 +56,14 @@ button {
   --text-primary: #F3F1E8;
   --text-secondary: #9A9D98;
 
-  --accent: #B7F34A;
-  --accent-dim: rgba(183, 243, 74, 0.15);
-  --accent-subtle: rgba(183, 243, 74, 0.45);
+  --accent: #CFFA24;
+  --accent-dim: rgba(207, 250, 36, 0.15);
+  --accent-subtle: rgba(207, 250, 36, 0.45);
 
   --border: #2A2D2B;
 
   --shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
-  --shadow-accent: 0 8px 30px rgba(183, 243, 74, 0.25);
+  --shadow-accent: 0 8px 30px rgba(207, 250, 36, 0.25);
 
   --radius-sm: 8px;
   --radius-md: 10px;
@@ -399,7 +399,7 @@ summary:focus-visible {
   background:
     linear-gradient(
       135deg,
-      rgba(183, 243, 74, 0.04),
+      rgba(207, 250, 36, 0.04),
       transparent 50%
     );
   pointer-events: none;
@@ -476,11 +476,11 @@ summary:focus-visible {
 }
 
 .service-card.featured {
-  border-color: rgba(183, 243, 74, 0.35);
+  border-color: rgba(207, 250, 36, 0.35);
   background:
     linear-gradient(
       135deg,
-      rgba(183, 243, 74, 0.06),
+      rgba(207, 250, 36, 0.06),
       transparent 50%
     ),
     var(--bg-raised);
@@ -724,6 +724,96 @@ summary:focus-visible {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1rem;
   margin: 2rem 0;
+}
+
+.service-directory {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.service-directory-item {
+  display: block;
+  padding: 2.5rem 0;
+  border-top: 1px solid var(--border);
+  transition: padding-left 0.25s ease, border-color 0.25s ease;
+}
+
+.service-directory-item:last-child {
+  border-bottom: 1px solid var(--border);
+}
+
+.service-directory-item:hover {
+  padding-left: 1rem;
+  border-color: var(--accent-subtle);
+}
+
+.service-directory-item h2 {
+  margin: 0.5rem 0;
+}
+
+.service-directory-item p {
+  max-width: 680px;
+  margin-bottom: 1rem;
+}
+
+.service-page-hero {
+  min-height: auto;
+  padding: 8rem 0 4rem;
+}
+
+.breadcrumb {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 2.5rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+}
+
+.breadcrumb a:hover {
+  color: var(--accent);
+}
+
+.service-page-hero h1 {
+  margin-top: 0.75rem;
+}
+
+.service-page-hero h1 + p {
+  margin-top: 1.25rem;
+}
+
+.service-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.service-page-hero .btn-group {
+  margin-top: 1.75rem;
+}
+
+.service-story,
+.service-proof {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  gap: 4rem;
+  align-items: start;
+  padding: 3rem 0;
+  border-top: 1px solid var(--border);
+}
+
+.service-story p + p {
+  margin-top: 1rem;
+}
+
+.service-proof {
+  align-items: center;
+  border-bottom: 1px solid var(--border);
+}
+
+.service-proof .btn {
+  justify-self: end;
 }
 
 .capability {
@@ -1058,6 +1148,16 @@ summary:focus-visible {
     grid-template-columns: 1fr;
   }
 
+  .service-story,
+  .service-proof {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .service-proof .btn {
+    justify-self: start;
+  }
+
   .contact-grid {
     grid-template-columns: 1fr;
     gap: 2.5rem;
@@ -1301,7 +1401,7 @@ summary:focus-visible {
   background: conic-gradient(
     from 0deg,
     transparent 0%,
-    rgba(183, 243, 74, 0.15) 5%,
+    rgba(207, 250, 36, 0.15) 5%,
     transparent 15%,
     transparent 100%
   );

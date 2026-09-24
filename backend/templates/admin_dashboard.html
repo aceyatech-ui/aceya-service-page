@@ -43,7 +43,7 @@
     }
 
     .header .accent {
-      color: #B7F34A;
+      color: #CFFA24;
     }
 
     .header .sub {
@@ -71,13 +71,13 @@
     }
 
     .btn-primary {
-      background: #B7F34A;
+      background: #CFFA24;
       color: #0D0F0E;
     }
 
     .btn-primary:hover {
       transform: translateY(-2px);
-      box-shadow: 0 8px 30px rgba(183, 243, 74, 0.25);
+      box-shadow: 0 8px 30px rgba(207, 250, 36, 0.25);
     }
 
     .btn-ghost {
@@ -87,8 +87,8 @@
     }
 
     .btn-ghost:hover {
-      border-color: #B7F34A;
-      color: #B7F34A;
+      border-color: #CFFA24;
+      color: #CFFA24;
     }
 
     .btn-danger {
@@ -190,8 +190,8 @@
     }
 
     .badge-pending {
-      background: rgba(183, 243, 74, 0.15);
-      color: #B7F34A;
+      background: rgba(207, 250, 36, 0.15);
+            color: #CFFA24;
     }
 
     .badge-approved {
@@ -256,7 +256,7 @@
           <div>
             <strong>{{ review.name }}</strong>
             {% if review.linkedin_url %}
-            <a href="{{ review.linkedin_url }}" target="_blank" rel="noopener" style="color: #B7F34A; font-size:0.7rem; display:block;">LinkedIn</a>
+            <a href="{{ review.linkedin_url }}" target="_blank" rel="noopener" style="color: #CFFA24; font-size:0.7rem; display:block;">LinkedIn</a>
             {% endif %}
           </div>
           <div class="message-preview">{{ review.review[:80] }}{% if review.review|length > 80 %}…{% endif %}</div>
@@ -299,7 +299,7 @@
           <div>
             <strong>{{ review.name }}</strong>
             {% if review.linkedin_url %}
-            <a href="{{ review.linkedin_url }}" target="_blank" rel="noopener" style="color: #B7F34A; font-size:0.7rem; display:block;">LinkedIn</a>
+            <a href="{{ review.linkedin_url }}" target="_blank" rel="noopener" style="color: #CFFA24; font-size:0.7rem; display:block;">LinkedIn</a>
             {% endif %}
           </div>
           <div class="message-preview">{{ review.review[:80] }}{% if review.review|length > 80 %}…{% endif %}</div>
