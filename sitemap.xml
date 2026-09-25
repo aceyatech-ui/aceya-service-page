@@ -2,42 +2,82 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://aceyasystems.com.ng/</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-25</lastmod>
     <priority>1.00</priority>
   </url>
   <url>
     <loc>https://aceyasystems.com.ng/services.html</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-25</lastmod>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://aceyasystems.com.ng/services/ai-automation.html</loc>
+    <lastmod>2026-09-25</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://aceyasystems.com.ng/services/business-automation.html</loc>
+    <lastmod>2026-09-25</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://aceyasystems.com.ng/services/custom-software.html</loc>
+    <lastmod>2026-09-25</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://aceyasystems.com.ng/services/python-automation.html</loc>
+    <lastmod>2026-09-25</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://aceyasystems.com.ng/services/web-development.html</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-09-25</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://aceyasystems.com.ng/case-studies.html</loc>
-    <lastmod>2026-08-21</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2026-09-25</lastmod>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://aceyasystems.com.ng/case-studies/ai-lead-finder.html</loc>
+    <lastmod>2026-09-25</lastmod>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://aceyasystems.com.ng/case-studies/lead-outreach.html</loc>
+    <lastmod>2026-09-25</lastmod>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://aceyasystems.com.ng/case-studies/port-scanner.html</loc>
+    <lastmod>2026-09-25</lastmod>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://aceyasystems.com.ng/case-studies/python-automation-toolkit.html</loc>
+    <lastmod>2026-09-25</lastmod>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://aceyasystems.com.ng/case-studies/substack-content-generator.html</loc>
+    <lastmod>2026-09-25</lastmod>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://aceyasystems.com.ng/how-we-think.html</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-25</lastmod>
     <priority>0.70</priority>
   </url>
   <url>
     <loc>https://aceyasystems.com.ng/insights.html</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-25</lastmod>
     <priority>0.70</priority>
   </url>
   <url>
     <loc>https://aceyasystems.com.ng/contact.html</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-25</lastmod>
     <priority>0.90</priority>
-  </url>
-  <url>
-    <loc>https://aceyasystems.com.ng/case-studies/substack-content-generator.html</loc>
-    <lastmod>2026-09-14</lastmod>
-    <priority>0.75</priority>
   </url>
 </urlset>
